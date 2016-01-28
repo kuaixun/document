@@ -23,7 +23,7 @@
 
 | 字段 | 说明 | 类型 | 父节点
 | -- | -- | -- |
-| news | 新闻列表，详细字段参照接口[*findInfoNByCoid5*](findinfonbycoid5.html) | 对象数组 ||
+| news | 新闻列表，详细字段参照接口[*findInfoNByCoid5*](findInfoNByCoid5.html) | 对象数组 ||
 | ts | 新闻刷新时间戳,由客户端下一次请求时传回 | string | | |
 
 * 响应示例
