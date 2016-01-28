@@ -2,7 +2,7 @@
 
 * [前言](README.md)
 * [新闻接口](chapter1.md)
-   * 频道列表
+   * [频道列表](pin_dao_lie_biao.md)
    * 新闻列表
        * 混合推荐
 * [第二章](di_er_zhang.md)
