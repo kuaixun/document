@@ -1,2 +1,0 @@
-# 旧版本findInfoNByCoid
-
