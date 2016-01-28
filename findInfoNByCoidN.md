@@ -8,7 +8,7 @@
 
 * 请求方法 *findInfoNByCoidN*
 
-    客户端应根据频道接口[*findInfoCateN5*](findInfoCateN5.html)返回的isMixRecom字段来控制刷新逻辑，isMixRecom为1时使用*findInfoNByCoidN*，为0时使用*findInfoNByCoid5*；
+    客户端需要根据频道接口[*findInfoCateN5*](findInfoCateN5.html)返回的isMixRecom字段来控制刷新逻辑，isMixRecom为1时使用*findInfoNByCoidN*，为0时使用*findInfoNByCoid5*；
     
     客户端需要在本地保存刷新得到的广告除外的新闻，并且在每次刷新时根据newsId**去重**，广告根据是否有adid字段来判断，有的即为广告；
 
