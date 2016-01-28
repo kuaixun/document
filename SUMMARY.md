@@ -8,7 +8,7 @@
        * [新版本](findInfoCateN5.md)
    * [新闻列表](xin_wen_lie_biao.md)
        * [旧版本](findInfoNByCoid.md)
-       * [新版本](findinfonbycoid5.md)
+       * [新版本](findInfoNByCoid5.md)
        * [混合推荐](findInfoNByCoidN.md)
 * [软件接口](di_er_zhang.md)
    * [软件更新](wen_zhang.md)
