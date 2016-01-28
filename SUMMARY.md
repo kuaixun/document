@@ -11,5 +11,5 @@
        * [新版本](findInfoNByCoid5.md)
        * [混合推荐](findInfoNByCoidN.md)
 * [软件接口](ruan_jian_jie_kou.md)
-   * [软件更新](wen_zhang.md)
+   * [软件更新](softUpdate.md)
 
