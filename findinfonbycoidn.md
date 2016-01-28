@@ -6,7 +6,7 @@
 
 #### **请求说明**
 
-* 请求方法 findInfoNByCoidN
+* 请求方法 *findInfoNByCoidN*
 
 * 请求参数
 
@@ -14,14 +14,14 @@
 | -- | -- | -- | -- | -- | -- |
 | coid | 频道ID | long | 是 |
 | gesture | 刷新手势，0下拉，1上滑 | int | 是 |
-| interval | 下拉刷新(针对gesture为0)的请求间隔分钟数，客户端第一次请求传0，后面请求每次至少传1 | int  | 是 | 
-| ts | 新闻刷新时间戳(包括下拉和上滑)，客户端第一次请求时传空串，后面每一次请求使用上一次请求返回的值 | string | 是
+| interval | 下拉刷新(针对gesture为0)的请求间隔分钟数<br>客户端第一次请求传0，后面请求每次至少传1 | int  | 是 | 
+| ts | 新闻刷新时间戳(包括下拉和上滑)<br>客户端第一次请求时传空串，后面每一次请求使用上一次请求返回的值 | string | 是
 
 * 返回参数
 
 | 字段 | 说明 | 类型 | 父节点
 | -- | -- | -- |
-| news | 新闻列表，详细字段参照[findInfoNByCoid5接口](findinfonbycoid5.html) | 对象数组 ||
+| news | 新闻列表，详细字段参照接口[*findInfoNByCoid5*](findinfonbycoid5.html) | 对象数组 ||
 | ts | 新闻刷新时间戳,由客户端下一次请求时传回 | string | | |
 
 * 响应示例
