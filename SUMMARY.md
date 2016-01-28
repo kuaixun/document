@@ -6,7 +6,7 @@
    * [频道列表](pin_dao_lie_biao.md)
    * [新闻列表](xin_wen_lie_biao.md)
        * [旧版本findInfoNByCoid](findinfonbycoid.md)
-       * 新版本findInfoNByCoid5
+       * [新版本findInfoNByCoid5](findinfonbycoid5.md)
        * 混合推荐findInfoNByCoidN
 * [软件接口](di_er_zhang.md)
    * [软件更新](wen_zhang.md)
