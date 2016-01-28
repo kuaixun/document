@@ -4,6 +4,7 @@
 * [新闻接口](chapter1.md)
    * 频道列表
    * 新闻列表
+       * 混合推荐
 * [第二章](di_er_zhang.md)
    * [文章](wen_zhang.md)
 
