@@ -8,6 +8,8 @@
 
 * 请求方法 *findInfoNByCoidN*
 
+    客户端应根据频道接口返回的isMixRecom字段来控制刷新逻辑，isMixRecom为1时使用findInfoNByCoidN，为0是使用findInfoNByCoid5
+
 * 请求参数
 
 | 字段 | 说明 | 类型 | 必须 |
