@@ -2,7 +2,7 @@
 
 #### **实现说明**  
 
-新版本新闻列表接口*findInfoNByCoid5*是为android客户端5.0之后的版本实现的接口，和[*findInfoNByCoidN*](findInfoNByCoidN.html)相比主要的修改是规范了一些字段的命名，并且增加了一些针对新需求的字段。
+新版本新闻列表接口*findInfoNByCoid5*是为android客户端5.0之后的版本实现的接口，和[*findInfoNByCoidN*](findInfoNByCoidN.html)相比主要修改是规范了一些字段的命名，并且增加了一些满足新需求的字段。
 
 #### **请求说明**
 
