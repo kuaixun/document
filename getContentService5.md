@@ -35,7 +35,7 @@
 |content	|评论内容 |string	|3	|hot_comment_list
 |uid	|用户ID |string	|3	|hot_comment_list
 |did	|用户设备号 |string	|3	|hot_comment_list
-|hot	|是否热门评论，1是0否 |int	|3	|hot_comment_list
+|hot	|是否热门评论，1是0否 |string	|3	|hot_comment_list
 |createtime	|评论时间 |long	|3	|hot_comment_list
 |location	|位置 |string	|3	|hot_comment_list
 
