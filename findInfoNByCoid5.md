@@ -77,6 +77,7 @@
             "webView": 0, 
             "upCount": 1286, 
             "downCount": 207, 
+            "shareCount": 120, 
             "content": "老婆：老公我去隆胸吧？
                 老公：好啊。
                 老婆：哼！你果然嫌我胸小。
