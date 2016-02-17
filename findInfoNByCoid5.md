@@ -17,10 +17,31 @@
 
 * 返回参数
 
-| 字段 | 说明 | 类型 | 父节点
+| 字段 | 说明 | 类型 | 级别 | 父节点
 | -- | -- | -- |
-| news | 新闻列表，详细字段参照接口[*findInfoNByCoid5*](findInfoNByCoid5.html) | 对象数组 ||
-| ts | 新闻刷新时间戳,由客户端下一次请求时传回 | string | | |
+| news | 新闻列表 | 对象数组 |1||
+| newsId | 新闻ID | long | 2 | news | 
+| channelId | 频道ID | long | 2 | news
+| type | 新闻类型 | int | 2 | news
+|open_type |打开方式|int	|2	|news
+|title	|标题 |string	|2	|news
+|desc	|描述 |string 	|2	|news
+|isTop	|是否置顶	|int |2	|news
+|time	|发布时间	|long |2	|news
+|content	|正文内容，只针对段子频道返回	|string |2	|news
+|upCount	|顶数量 |long	|2	|news
+|downCount	|踩数量 |long	|2	|news
+|shareCount	|分享数量 |long	|2	|news
+|hot_comment_list	|热门评论 |对象数组	|2	|news
+|commentId	|评论ID |long	|3	|hot_comment_list
+|newsid	|新闻ID |long	|3	|hot_comment_list
+|content	|评论内容 |string	|3	|hot_comment_list
+|uid	|用户ID |string	|3	|hot_comment_list
+|did	|用户设备号 |string	|3	|hot_comment_list
+|hot	|是否热门评论，1是0否 |int	|3	|hot_comment_list
+|createtime	|评论时间 |long	|3	|hot_comment_list
+|location	|位置 |string	|3	|hot_comment_list
+
 
 * 响应示例
 
@@ -30,34 +51,42 @@
         "reCode": "1", 
         "resMessage": "Operation is successful"
     }, 
+    "picNews": [ ], 
     "news": [
         {
-            "title": "8旬老人含泪打官司要儿子一家搬走:不养老还啃老", 
-            "desc": "杭州的王阿姨八十多岁了,去年她打了生平第一场官司,要求同住的儿子一家搬出去,最近又到法院申请强制执行。", 
-            "time": 1453945320000, 
-            "source": "新华炫闻", 
-            "content_url": "http://192.168.10.170:8091/images/4061/20160128/3777717/3777717.html", 
-            "newsUrl": "http://xw.feedss.com/show/index?newsid=235388", 
+            "title": "老婆：老公我去隆胸吧？老公：好啊...", 
+            "desc": "老婆：老公我去隆胸吧？
+                老公：好啊。
+                老婆：哼！你果然嫌我胸小。
+                老公：......
+                老婆：老公我去隆胸吧？
+                老公：别去了。
+                老婆：哼！你就是舍不得我花钱。
+                老公：......", 
+            "time": 1455678900000, 
+            "source": "手机冲浪", 
+            "content_url": "http://go.10086.cn/surfnews/images/4648023/20160217/5341892/5341892.html", 
             "isTop": 0, 
             "type": 1, 
             "open_type": 0, 
             "ctype": 0, 
-            "is_energy": 0, 
-            "comment_count": 0, 
-            "imageScale": 1, 
-            "intimacyDegree": 2000, 
-            "rssId": 59233315, 
-            "rssName": "搜狐猛图", 
-            "rssIcon": "http://192.168.10.150:8090/hotpic/201503/04/source5923331520150304174215.jpg", 
-            "rssSource": "1", 
+            "isComment": 1, 
             "showType": 1003, 
-            "newsId": 3777717, 
-            "channelId": 4061, 
+            "newsId": 5341892, 
+            "channelId": 4648023, 
             "webView": 0, 
-            "content_type": 1
+            "upCount": 1286, 
+            "downCount": 207, 
+            "content": "老婆：老公我去隆胸吧？
+                老公：好啊。
+                老婆：哼！你果然嫌我胸小。
+                老公：......
+                老婆：老公我去隆胸吧？
+                老公：别去了。
+                老婆：哼！你就是舍不得我花钱。
+                老公：......"
         }
-    ], 
-    "ts": "1453949923000,1453945321000,0,0"
+    ]
 }
 ```
 
