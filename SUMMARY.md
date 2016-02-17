@@ -12,6 +12,7 @@
        * [混合推荐](findInfoNByCoidN.md)
    * 新闻操作
        * 获取正文5
+       * 顶踩分享
 * [软件接口](ruan_jian_jie_kou.md)
    * [软件更新](softUpdate.md)
 
