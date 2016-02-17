@@ -12,23 +12,20 @@
 
 | 字段 | 说明 | 类型 | 必须 |
 | -- | -- | -- | -- | -- | -- |
-| coid | 频道ID | long | 是 |
-| page | 请求页数，从1开始 | int | 是 |
+| id | 新闻ID | long | 是 |
+| type |新闻类型，0是普通新闻，1是RSS新闻 | int | 是 |
 
 * 返回参数
 
 | 字段 | 说明 | 类型 | 级别 | 父节点
 | -- | -- | -- |
-| news | 新闻列表 | 对象数组 |1||
-| newsId | 新闻ID | long | 2 | news | 
-| channelId | 频道ID | long | 2 | news
-| type | 新闻类型 | int | 2 | news
-|open_type |打开方式|int	|2	|news
+| news | 新闻 | 对象 |1||
 |title	|标题 |string	|2	|news
-|desc	|描述 |string 	|2	|news
-|isTop	|是否置顶	|int |2	|news
-|time	|发布时间	|long |2	|news
-|content	|正文内容，只针对段子频道返回	|string |2	|news
+|source	|来源 |string 	|2	|news
+|comment_count	|评论数量	|long |2	|news
+|content_url	|正文地址	|string |2	|news
+|newsUrl	|新闻源网址	|string |2	|news
+|is_collected |是否已经收藏,1是0否 |int | 2 |news
 |upCount	|顶数量 |long	|2	|news
 |downCount	|踩数量 |long	|2	|news
 |shareCount	|分享数量 |long	|2	|news
@@ -45,4 +42,56 @@
 
 * 响应示例
 
+```
+{
+    "res": {
+        "reCode": "1", 
+        "resMessage": "Operation is successful"
+    }, 
+    "news": {
+        "title": "郭美美开设赌场被判5年", 
+        "source": "新华社",
+        "comment_count": 26, 
+        "content_url": "http://go.10086.cn/surfnews/images/4061/20150910/3094871/3094871.html", 
+        "newsUrl": "http://sinanews.sina.cn/sharenews.shtml?id=fxhuyha2136212-comos-zx-cms&wm=3200_00031", 
+        "is_collected": "0",
+        "hot_comment_list": [
+            {
+                "id": 96150, 
+                "commentId": 96150, 
+                "newsid": 3094871, 
+                "content": "富的有几个不违法！", 
+                "uid": "c14fbdcbf037faad5aee1375ba6a56ab", 
+                "did": "ebd62283-f198-3f45-bdeb-70a5e88a8694", 
+                "status": 1, 
+                "hot": 0, 
+                "createtime": 1441935168890, 
+                "location": "湖南省永州"
+            }, 
+            {
+                "id": 95705, 
+                "commentId": 95705, 
+                "newsid": 3094871, 
+                "content": "人家还是小孩，有错就改吗？", 
+                "did": "f7270686-ca73-3d8a-8f8d-16c760f52a55", 
+                "status": 1, 
+                "hot": 0, 
+                "createtime": 1441923875171, 
+                "location": ""
+            }, 
+            {
+                "id": 95627, 
+                "commentId": 95627, 
+                "newsid": 3094871, 
+                "content": "还可以", 
+                "uid": "72e57cd74ef9b1ff", 
+                "did": "79A7BACB-DF19-47B7-8EFF-75703F11C13F", 
+                "status": 1, 
+                "hot": 0, 
+                "createtime": 1441904152849, 
+                "location": "上海上海"
+            }
+        ]
+    }
+}
 ```
