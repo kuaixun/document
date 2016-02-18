@@ -19,29 +19,17 @@
 
 | 字段 | 说明 | 类型 | 级别 | 父节点
 | -- | -- | -- |
-| channelList | 频道列表 | 对象数组 |1||
-| channelId | 频道ID | long | 2 | channelList
-| channelName | 频道名称 | int | 2 | news
-|open_type |打开方式|int	|2	|news
-|title	|标题 |string	|2	|news
-|desc	|描述 |string 	|2	|news
-|isTop	|是否置顶	|int |2	|news
-|time	|发布时间	|long |2	|news
-|content	|正文内容，只针对段子频道返回	|string |2	|news
-|upCount	|顶数量 |long	|2	|news
-|downCount	|踩数量 |long	|2	|news
-|shareCount	|分享数量 |long	|2	|news
-|hot_comment_list	|热门评论 |对象数组	|2	|news
-|commentId	|评论ID |long	|3	|hot_comment_list
-|newsid	|新闻ID |long	|3	|hot_comment_list
-|content	|评论内容 |string	|3	|hot_comment_list
-|uid	|用户ID |string	|3	|hot_comment_list
-|did	|用户设备号 |string	|3	|hot_comment_list
-|headPic	|用户头像 |string	|3	|hot_comment_list
-|nickname	|用户昵称 |string	|3	|hot_comment_list
-|hot	|是否热门评论，1是0否 |int	|3	|hot_comment_list
-|createtime	|评论时间 |long	|3	|hot_comment_list
-|location	|位置 |string	|3	|hot_comment_list
+|channelList |频道列表 |对象数组 |1 ||
+|channelId |频道ID |long |2 | channelList
+|channelName |频道名称 |string |2 | channelList
+|channelIndex |频道位置，值越小的越靠前 |long	|2	|channelList
+|isBeauty	|请求类型，0传统方式，1美女频道，2webview打开，3T+，4订阅频道，5段子，6趣图|int	|2	|channelList
+|isMixRecom	|是否混合推荐，1是0否 |int 	|2	|channelList
+|isWidget	|是否在widget展示，1是0否	|int |2	|channelList
+|isnew	|是否提示更新，0否，1point，2new，3hot	|int |2	|channelList
+|type	|维护类型，0快讯维护，1冲浪维护，2图集，3微博源，4视频 |int |2	|channelList
+|position |栏目位置，0顶部，1隐藏 |int |2 |channelList
+
 
 
 * 响应示例
