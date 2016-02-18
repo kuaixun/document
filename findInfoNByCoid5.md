@@ -26,12 +26,14 @@
 |open_type |打开方式|int	|2	|news
 |title	|标题 |string	|2	|news
 |desc	|描述 |string 	|2	|news
+|imgUrl |缩略图 |string |2 |news
 |isTop	|是否置顶	|int |2	|news
 |time	|发布时间	|long |2	|news
 |content	|正文内容，只针对段子频道返回	|string |2	|news
 |upCount	|顶数量 |long	|2	|news
 |downCount	|踩数量 |long	|2	|news
 |shareCount	|分享数量 |long	|2	|news
+|comment_count |评论数量 |long |2 |news
 |hot_comment_list	|热门评论 |对象数组	|2	|news
 |commentId	|评论ID |long	|3	|hot_comment_list
 |newsid	|新闻ID |long	|3	|hot_comment_list
