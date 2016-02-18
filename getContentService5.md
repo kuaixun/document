@@ -29,6 +29,7 @@
 |upCount	|顶数量 |long	|2	|news
 |downCount	|踩数量 |long	|2	|news
 |shareCount	|分享数量 |long	|2	|news
+|comment_count |评论数量 |long |2 |news
 |hot_comment_list	|热门评论 |对象数组	|2	|news
 |commentId	|评论ID |long	|3	|hot_comment_list
 |newsid	|新闻ID |long	|3	|hot_comment_list
