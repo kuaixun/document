@@ -28,7 +28,7 @@
 |desc	|描述 |string 	|2	|news
 |imgUrl |图片 |string |2 |news
 |dm |图片分辨率，宽*高格式 |string |2 |news
-|showType |展示格式，定义参照 |int |2 |news
+|showType |展示格式，[参照格式定义](#showType格式定义) |int |2 |news
 |isTop	|是否置顶	|int |2	|news
 |time	|发布时间	|long |2	|news
 |content	|正文内容，只针对段子频道返回	|string |2	|news
