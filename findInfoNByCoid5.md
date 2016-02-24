@@ -28,6 +28,7 @@
 |desc	|描述 |string 	|2	|news
 |imgUrl |图片 |string |2 |news
 |dm |图片分辨率，宽*高格式 |string |2 |news
+|showType |展示格式，定义参照 |int |2 |news
 |isTop	|是否置顶	|int |2	|news
 |time	|发布时间	|long |2	|news
 |content	|正文内容，只针对段子频道返回	|string |2	|news
@@ -47,6 +48,24 @@
 |hot	|是否热门评论，1是0否 |int	|3	|hot_comment_list
 |createtime	|评论时间 |long	|3	|hot_comment_list
 |location	|位置 |string	|3	|hot_comment_list
+
+* showType格式定义
+
+|取值 |说明 | 
+| --  | -- | 
+|1001 |单图
+|1002 |多图
+|1003 |无图
+|1004 |趣图gif
+|2001 |广告大图
+|2002 |广告小图
+|2003 |广告下载小图
+|2004 |广告下载大图
+|3001 |专题有图片
+|3002 |专题无图片
+|4001 |热推第一条的T+新闻推荐
+|4002 |热推第一条的T+RSS推荐
+
 
 * 一般频道响应示例
 ```
