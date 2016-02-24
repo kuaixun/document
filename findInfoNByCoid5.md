@@ -11,7 +11,7 @@ showType字段用来决定列表的展示格式，定义如下：
 | --  | -- | 
 |1001 |单图
 |1002 |多图
-|1003 |无图
+|1003 |无图，大图新闻为了兼容老版本也是置为1003，新版本需根据bigImg是否为1判断大图，大图图片地址取bannerUrl字段
 |1004 |趣图gif
 |2001 |广告大图
 |2002 |广告小图
@@ -47,6 +47,8 @@ showType字段用来决定列表的展示格式，定义如下：
 |imgUrl |图片 |string |2 |news
 |dm |图片分辨率，宽*高格式 |string |2 |news
 |showType |展示格式，[参照格式定义](#新闻展示格式定义) |int |2 |news
+|bigImg |是否为大图新闻，1是0否 |string |2 |news
+|bannerUrl |banner图或者大图地址 |string | 2 |news
 |isTop	|是否置顶	|int |2	|news
 |time	|发布时间	|long |2	|news
 |content	|正文内容，只针对段子频道返回	|string |2	|news
