@@ -26,7 +26,8 @@
 |open_type |打开方式|int	|2	|news
 |title	|标题 |string	|2	|news
 |desc	|描述 |string 	|2	|news
-|imgUrl |缩略图 |string |2 |news
+|imgUrl |图片 |string |2 |news
+|dm |图片分辨率，宽*高格式 |string |2 |news
 |isTop	|是否置顶	|int |2	|news
 |time	|发布时间	|long |2	|news
 |content	|正文内容，只针对段子频道返回	|string |2	|news
@@ -90,6 +91,7 @@
             "time": 1455762554000, 
             "source": "快讯", 
             "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160218/back/1454034002186.jpg", 
+            "dm":"600*800",
             "newsUrl": "http://go.10086.cn/surfnews/usr/surf/special/20160218/1323.html", 
             "isTop": 1, 
             "type": 1, 
