@@ -4,8 +4,8 @@
 
 新版本新闻列表接口*findInfoNByCoid5*是为android客户端5.0之后的版本实现的接口，和[*findInfoNByCoidN*](findInfoNByCoidN.html)相比主要修改是规范了一些字段的命名，并且增加了一些满足新需求的字段。
 
-#### **格式定义**
-showType用来决定列表的展示格式，定义如下：
+#### **新闻展示格式定义**
+showType字段用来决定列表的展示格式，定义如下：
 
 |取值 |说明 | 
 | --  | -- | 
@@ -46,7 +46,7 @@ showType用来决定列表的展示格式，定义如下：
 |desc	|描述 |string 	|2	|news
 |imgUrl |图片 |string |2 |news
 |dm |图片分辨率，宽*高格式 |string |2 |news
-|showType |展示格式，[参照格式定义](#showType格式定义) |int |2 |news
+|showType |展示格式，[参照格式定义](#新闻展示格式定义) |int |2 |news
 |isTop	|是否置顶	|int |2	|news
 |time	|发布时间	|long |2	|news
 |content	|正文内容，只针对段子频道返回	|string |2	|news
