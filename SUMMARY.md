@@ -13,6 +13,7 @@
    * [新闻操作](xin_wen_cao_zuo.md)
        * [获取正文5](getContentService5.md)
        * [顶踩分享](upDownOper.md)
+       * 收藏列表
 * [软件接口](ruan_jian_jie_kou.md)
    * [软件更新](softUpdate.md)
 
