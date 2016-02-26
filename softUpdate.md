@@ -15,30 +15,30 @@
  
 | 字段名 | 说明 | 类型 | 级别 | 父节点 |
 | -- | -- | -- | -- | -- |
-| res | 1:2 | 2:2 | 3:2 |  |
-| resCode | 1:3 | 2:3 | 3:3 | res |
-| resMessage | 1:4 | 2:4 | 3:4 | res |
-| userid | 1:5 | 2:5 | 3:5 |  |
-| mob | 1:6 | 2:6 | 3:6 |  |
-| cityId | 1:7 | 2:7 | 3:7 |  |
-| city | 1:8 | 2:8 | 3:8 |  |
-| prov | 1:9 | 2:9 | 3:9 |  |
-| sid | 1:10 | 2:10 | 3:10 |  |
-| suid | 1:11 | 2:11 | 3:11 |  |
-| hateOptions | 1:12 | 2:12 |  |  |
-| ih | 1:13 | 2:13 | 3:13 |  |
-| newconfig | 1:14 | 2:14 |  |  |
-| flowSyn | 1:15 | 2:15 | 3:15 |  |
-| dataTime | 1:15 | 2:15 | 3:15 | flowSyn |
-| flowData | 1:15 | 2:15 | 3:15 | flowSyn |
-| type | 1:15 | 2:15 | 3:15 | flowSyn |
-| skinPackage | 1:15 | 2:15 | 3:15 |  |
-| downUrl | 1:15 | 2:15 | 3:15 | skinPackage |
-| file | 1:15 | 2:15 | 3:15 | skinPackage |
-| id | 1:15 | 2:15 | 3:15 | skinPackage |
-| isEnable | 1:15 | 2:15 | 3:15 | skinPackage |
-| packageName | 1:15 | 2:15 | 3:15 | skinPackage |
-| packageUrl | 1:15 | 2:15 | 3:15 | skinPackage |
-| updateTime | 1:15 | 2:15 | 3:15 | skinPackage |
+| res | 响应 |  | 1 |  |
+| resCode | 响应代码 | String | 2 | res |
+| resMessage | 响应信息 | String | 2 | res |
+| userid | 用户id | long | 1 |  |
+| mob | 用户手机号（加密） | String | 1 |  |
+| cityId | 城市id | String | 1 |  |
+| city | 城市名称 | String | 1 |  |
+| prov | 省份名称 | String | 1 |  |
+| sid | 加密id | String | 1 |  |
+| suid | 加密后的uid | String | 1 |  |
+| hateOptions |  | String | 1 |  |
+| ih |  | String | 1 |  |
+| newconfig |  | String | 1 |  |
+| flowSyn | 流量信息 |  | 1 |  |
+| dataTime | 时间 | String | 2 | flowSyn |
+| flowData | 流量数据 | String | 2 | flowSyn |
+| type | 流量类型 | String | 2 | flowSyn |
+| skinPackage | 皮肤包 |  | 1 |  |
+| downUrl | 1:15 | String | 2 | skinPackage |
+| file | 1:15 | String | 2 | skinPackage |
+| id | 1:15 | long | 2 | skinPackage |
+| isEnable | 1:15 | int | 2 | skinPackage |
+| packageName | 1:15 | String | 2 | skinPackage |
+| packageUrl | 1:15 | String | 2 | skinPackage |
+| updateTime | 1:15 | long | 2 | skinPackage |
 
 
