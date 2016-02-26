@@ -41,4 +41,55 @@
 | packageUrl | 文件存放路径 | String | 2 | skinPackage |
 | updateTime | 更新时间，用于判断是否下载皮肤包 | long | 2 | skinPackage |
 
+* 响应示例
 
+```
+{
+    "city":"南京",
+    "cityId":"101190101",
+    "defaultEnergy":-10000,
+    "flowSyn":[
+        {
+            "dataTime":"20160226 030110",
+            "flowData":"0.0",
+            "type":"0"
+        },
+        {
+            "dataTime":"20160226 030110",
+            "flowData":"62232.0",
+            "type":"1"
+        },
+        {
+            "dataTime":"20160226 030110",
+            "flowData":"0.0",
+            "type":"2"
+        },
+        {
+            "dataTime":"20160226 030110",
+            "flowData":"5824103.0",
+            "type":"3"
+        }
+    ],
+    "hateOptions":"重复,旧闻,质量差,其他",
+    "ih":"1",
+    "mob":"95c03d669b2dc810d32e31b8b0940be5",
+    "newconfig":"56:0:90",
+    "prov":"江苏",
+    "res":{
+        "reCode":"1",
+        "resMessage":"Operation is successful"
+    },
+    "sid":"1",
+    "suid":"c73b32b8fbbab6d05aee1375ba6a56ab",
+    "userid":12111545
+    "skinPackage":{
+        "downUrl":"http://192.168.10.170:8091/surfnews/usr/surf/package/20160226/new_year.zip",
+        "file":"776b4ed897aa79f1ab025870d5e91503",
+        "id":1,
+        "isEnable":1,
+        "packageName":"new year",
+        "packageUrl":"/usr/surf/package/20160226/new_year.zip",
+        "updateTime":1456458902141
+    }
+}
+```
