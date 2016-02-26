@@ -28,7 +28,9 @@
 |newsUrl |新闻html地址 |string |2 |news
 |coid | 频道ID | long | 2 | news
 |open_type |打开方式|int	|2	|news
-|desc	|描述 |string 	|2	|news
+|imgUrl |图片地址 |string |2 |news
+|dm |图片分辨率，宽*高格式 |string |2 |news
+|showType |展示格式，[参照格式定义](#新闻展示格式定义) |int |2 |news
 
 * 响应示例
 
