@@ -33,12 +33,12 @@
 | flowData | 流量数据 | String | 2 | flowSyn |
 | type | 流量类型 | String | 2 | flowSyn |
 | skinPackage | 皮肤包 |  | 1 |  |
-| downUrl | 1:15 | String | 2 | skinPackage |
-| file | 1:15 | String | 2 | skinPackage |
-| id | 1:15 | long | 2 | skinPackage |
-| isEnable | 1:15 | int | 2 | skinPackage |
-| packageName | 1:15 | String | 2 | skinPackage |
-| packageUrl | 1:15 | String | 2 | skinPackage |
-| updateTime | 1:15 | long | 2 | skinPackage |
+| downUrl | 文件下载路径 | String | 2 | skinPackage |
+| file | 文件MD5校验，用于判断下载文件是否完整 | String | 2 | skinPackage |
+| id | 皮肤包id | long | 2 | skinPackage |
+| isEnable | 是否发布 | int | 2 | skinPackage |
+| packageName | 皮肤包名称 | String | 2 | skinPackage |
+| packageUrl | 文件存放路径 | String | 2 | skinPackage |
+| updateTime | 更新时间，用于判断是否下载皮肤包 | long | 2 | skinPackage |
 
 
