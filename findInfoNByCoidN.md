@@ -22,7 +22,7 @@
   * 指定频道
   * type为{0, 1, 2, 5}
   * content_type不为0(过滤后台广告)
-  * updateTime不为空且time<编辑新闻结束时间戳
+  * updateTime不为空且time<编辑新闻结束时间戳或者updateTime为空且time<抓取新闻结束时间戳
     
 
 
