@@ -2,6 +2,7 @@
 
 * [前言](README.md)
 * [重要说明](summarymd.md)
+   * 搜索接口
 * [新闻接口](xin_wen_jie_kou.md)
    * [频道列表](pin_dao_lie_biao.md)
        * [旧版本](findInfoCateN.md)
