@@ -16,5 +16,4 @@
        * [收藏列表](getCollectedList.md)
 * [软件接口](ruan_jian_jie_kou.md)
    * [软件更新](softUpdate.md)
-       * 软件更新
 
