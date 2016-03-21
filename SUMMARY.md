@@ -2,7 +2,6 @@
 
 * [前言](README.md)
 * [重要说明](summarymd.md)
-   * 搜索接口
 * [新闻接口](xin_wen_jie_kou.md)
    * [频道列表](pin_dao_lie_biao.md)
        * [旧版本](findInfoCateN.md)
@@ -15,6 +14,7 @@
        * [获取正文5](getContentService5.md)
        * [顶踩分享](upDownOper.md)
        * [收藏列表](getCollectedList.md)
+* 搜索接口
 * [软件接口](ruan_jian_jie_kou.md)
    * [软件更新](softUpdate.md)
 
