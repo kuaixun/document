@@ -15,7 +15,7 @@
        * [顶踩分享](upDownOper.md)
        * [收藏列表](getCollectedList.md)
 * 搜索接口
-   * 热门搜索词
+   * [热门搜索词](getHotWordsList.md)
 * [软件接口](ruan_jian_jie_kou.md)
    * [软件更新](softUpdate.md)
 
