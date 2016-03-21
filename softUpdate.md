@@ -25,7 +25,8 @@
 | prov | 省份名称 | String | 1 |  |
 | sid | 加密id | String | 1 |  |
 | suid | 加密后的uid | String | 1 |  |
-| hateOptions |  | String | 1 |  |
+| hateOptions | 不喜欢选项标签信息,多个用逗号间隔 | String | 1 |  |
+| navigateUrl | 导航地址 | String | 1 |  |
 | ih |  | String | 1 |  |
 | newconfig |  | String | 1 |  |
 | flowSyn | 流量信息 |  | 1 |  |
@@ -71,6 +72,7 @@
         }
     ],
     "hateOptions":"重复,旧闻,质量差,其他",
+    "navigateUrl":"https://www.baidu.com",
     "ih":"1",
     "mob":"95c03d669b2dc810d32e31b8b0940be5",
     "newconfig":"56:0:90",
