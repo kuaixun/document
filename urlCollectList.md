@@ -15,21 +15,15 @@
 | uid | 用户id | long | 是 |
 
 * 返回参数
+
 | 字段 | 说明 | 类型 | 级别 | 父节点
 | -- | -- | -- |
-|news | 新闻列表 | 对象数组 |1 ||
-|newsId | 新闻ID | long | 2 | news | 
-|title	|标题 |string	|2	|news
-|showTime |新闻时间 |long |2 |news
-|type | 新闻类型 | int | 2 | news
-|source |新闻来源 |string |2 |news
-|contentUrl |正文地址 |string |2 |news
-|newsUrl |新闻html地址 |string |2 |news
-|coid | 频道ID | long | 2 | news
-|open_type |打开方式|int	|2	|news
-|imgUrl |图片地址 |string |2 |news
-|dm |图片分辨率，宽*高格式 |string |2 |news
-|showType |展示格式，[参照格式定义](findInfoNByCoid5.html#新闻展示格式定义 "格式定义") |int |2 |news
+|item |  收藏列表 | 对象数组 |1 ||
+|url | 网址 | string | 2 | item | 
+|title	|标题 |string	|2	|item
+|icon |图标 |string |2 |item
+|time | 收藏时间 | long | 2 | item
+
 * 响应示例
 
 ```
