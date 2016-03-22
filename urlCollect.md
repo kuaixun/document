@@ -14,6 +14,9 @@
 | -- | -- | -- | -- | -- | -- |
 | oper | 操作类型，1添加或更新，2删除 | int | 是 |
 | uid | 用户id | long | 是 |
+| url | 网址 | string | 是 |
+| title | 网址标题 | string | oper为1时必须 |
+| icon | 网站图标 | string | oper为1时必须 |
 
 * 返回参数
 
