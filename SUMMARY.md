@@ -19,6 +19,6 @@
 * [软件接口](ruan_jian_jie_kou.md)
    * [软件更新](softUpdate.md)
 * [用户接口](user.md)
-   * 网址收藏
+   * [网址收藏](urlCollect.md)
    * 网址收藏列表
 
