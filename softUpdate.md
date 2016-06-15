@@ -27,6 +27,7 @@
 | suid | 加密后的uid | String | 1 |  |
 | hateOptions | 不喜欢选项标签信息,多个用逗号间隔 | String | 1 |  |
 | navigateUrl | 导航地址 | String | 1 |  |
+| notifyNewsCoids | 常驻通知新闻获取频道，多个用逗号间隔 | String | 1 |  |
 | ih |  | String | 1 |  |
 | newconfig |  | String | 1 |  |
 | flowSyn | 流量信息 |  | 1 |  |
