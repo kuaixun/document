@@ -74,6 +74,7 @@
     ],
     "hateOptions":"重复,旧闻,质量差,其他",
     "navigateUrl":"https://www.baidu.com",
+    "notifyNewsCoids":"4061,4007281",
     "ih":"1",
     "mob":"95c03d669b2dc810d32e31b8b0940be5",
     "newconfig":"56:0:90",
