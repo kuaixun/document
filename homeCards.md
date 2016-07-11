@@ -14,6 +14,7 @@
 | name | 卡片名称 | String |
 | type | 卡片类型，用于唯一标识某种卡片实现，具体定义见下一节 | String |
 | sortable | 是否可排序，1是0否 | int |
+| closable | 是否可关闭显示，1是0否 | int |
 
 
 
