@@ -153,7 +153,7 @@
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
 | id | 主键 | long |
-| showType | 广告展示类型 | int |
+| showType | 广告展示类型，待扩展 | int |
 | title | 广告主题 | String |
 | image | 广告图片地址 | String |
 | url | 广告跳转地址 | String |
