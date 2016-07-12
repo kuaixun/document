@@ -137,8 +137,8 @@
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
 | id | 主键 | long |
-| name | 小说名称 | String |
-| name | 小说名称 | String |
+| title | 小说主题 | String |
+| cover | 小说封面地址 | String |
 | url | 小说跳转地址 | String |
 
 
