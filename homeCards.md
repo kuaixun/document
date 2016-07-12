@@ -39,8 +39,8 @@
 | name | 显示名称 | String |
 | icon | 显示图标http地址 | String |
 | jumpType | 跳转类型,1TAB,2频道 | int |
-| jumpTarget | 跳转目标,对应TAB标识、频道ID | String |
-##### 每日快讯
+| jumpTarget | 跳转目标,对应TAB标识、频道ID | String | 
+##### 每日快讯  
 * type定义：*news*
 * 需求说明  
   1.每1小时自动获取快讯推荐频道最新28条入缓存（快讯/直投广告除外），按时间先后显示1-4条，点击换一换按顺序循环显示，每次4条；  
