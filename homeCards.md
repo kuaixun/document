@@ -33,8 +33,8 @@
 | id | 主键 | long |
 | name | 显示名称 | String |
 | icon | 显示图标http地址 | String |
-| jumpType | 跳转类型,1TAB,2频道,3URL | int |
-| jumpTarget | 跳转目标,对应TAB标识、频道ID、URL | String |
+| jumpType | 跳转类型,1TAB,2频道 | int |
+| jumpTarget | 跳转目标,对应TAB标识、频道ID | String |
 
 | 卡片type | 卡片类型 | 需求说明 | 实现说明 |
 | -- | -- | -- | -- | -- | -- |
