@@ -140,6 +140,7 @@
 | title | 小说主题 | String |
 | cover | 小说封面地址 | String |
 | url | 小说跳转地址 | String |
+| readCount | 阅读数量 | long |
 
 ##### 广告
 * type定义：*ad*
