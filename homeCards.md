@@ -40,6 +40,7 @@
 | icon | 显示图标http地址 | String |
 | jumpType | 跳转类型,1TAB,2频道 | int |
 | jumpTarget | 跳转目标,对应TAB标识、频道ID | String | 
+
 ##### 每日快讯  
 * type定义：*news*
 * 需求说明  
@@ -51,6 +52,7 @@
   2.服务端控制只返回带缩略图的新闻；
 * 字段定义  
 参照接口返回[*findInfoNByCoid5*](findInfoNByCoid5.html)
+
 ##### 搞笑视频
 * type定义：*funny*
 * 需求说明  
@@ -62,6 +64,7 @@
   2.服务端控制只返回带缩略图的视频新闻；
 * 字段定义  
 参照接口返回[*findInfoNByCoid5*](findInfoNByCoid5.html)
+
 ##### 轻松一刻
 * type定义：*joke*
 * 需求说明  
@@ -72,6 +75,7 @@
   1.更多笑料和换一换逻辑由客户端实现；  
 * 字段定义  
 参照接口返回[*findInfoNByCoid5*](findInfoNByCoid5.html)
+
 ##### 美女
 * type定义：*beauty*
 * 需求说明  
