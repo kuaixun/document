@@ -121,9 +121,7 @@
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
 | id | 主键 | long |
-| name | 网站名称 | String |
-| icon | 网站图标http地址 | String |
-| url | 网页地址 | String |
+| name | 热词名称 | String |
 
 |  |  | 1、<br>2、<br>3、<br>4、||
 |  |  | <br>1、<br><br>1、<br>2、| |
