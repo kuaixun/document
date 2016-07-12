@@ -201,25 +201,9 @@
 
 * 请求方法 *homeCards*
 
-    客户端需要根据频道接口[*findInfoCateN5*](findInfoCateN5.html)返回的isMixRecom字段来控制刷新逻辑，isMixRecom为1时使用*findInfoNByCoidN*，为0时使用*findInfoNByCoid5*；
-    
-    客户端需要在本地保存刷新得到的广告除外的新闻，并且在每次刷新时根据newsId**去重**，广告根据是否有adid字段来判断，有的即为广告；
-
 * 请求参数
 
-| 字段 | 说明 | 类型 | 必须 |
-| -- | -- | -- | -- | -- | -- |
-| coid | 频道ID | long | 是 |
-| gesture | 刷新手势，0下拉，1上滑 | int | 是 |
-| interval | 分频道下拉刷新(仅针对gesture为0)的请求间隔分钟数<br>客户端第一次请求传0，后面请求每次至少传1 | int  | 是 | 
-| ts | 分频道新闻刷新(包括下拉和上滑)时间戳<br>客户端第一次请求时传空串，后面每一次请求使用上一次请求返回的值 | string | 是
-
 * 返回参数
-
-| 字段 | 说明 | 类型 | 父节点
-| -- | -- | -- |
-| news | 新闻列表，详细字段参照接口[*findInfoNByCoid5*](findInfoNByCoid5.html) | 对象数组 ||
-| ts | 新闻刷新时间戳,由客户端下一次请求时传回 | string | | |
 
 * 响应示例
 
