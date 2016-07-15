@@ -10,7 +10,7 @@
 
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
-| id | 主键 | long |
+| cardId | 主键 | long |
 | name | 卡片名称 | String |
 | type | 卡片类型，用于唯一标识某种卡片实现，具体定义见卡片类型一节 | String |
 | controls | 控制开关字段，由多个具体的控制项组成，每项占一个字节，目前从低位到高位分别表示是否可排序、是否可关闭显示，后续可扩展；举例如返回数字2，对应二级制10，则表示可关闭显示、不可排序 | int |
@@ -35,7 +35,7 @@
 
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
-| id | 主键 | long |
+| dataId | 主键 | long |
 | name | 显示名称 | String |
 | icon | 显示图标http地址 | String |
 | jumpType | 跳转类型,1TAB,2频道 | int |
@@ -98,7 +98,7 @@
 
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
-| id | 主键 | long |
+| dataId | 主键 | long |
 | name | 网站名称 | String |
 | icon | 网站图标http地址 | String |
 | url | 网页地址 | String |
@@ -114,7 +114,7 @@
 
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
-| id | 主键 | long |
+| dataId | 主键 | long |
 | name | 网站名称 | String |
 | icon | 网站图标http地址 | String |
 | url | 网页地址 | String |
@@ -146,7 +146,7 @@
 
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
-| id | 主键 | long |
+| dataId | 主键 | long |
 | name | 热词名称 | String |
 
 ##### 小说
@@ -162,7 +162,7 @@
 
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
-| id | 主键 | long |
+| dataId | 主键 | long |
 | title | 小说主题 | String |
 | cover | 小说封面地址 | String |
 | url | 小说跳转地址 | String |
@@ -179,7 +179,7 @@
 
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
-| id | 主键 | long |
+| dataId | 主键 | long |
 | showType | 广告展示类型，待扩展 | int |
 | title | 广告主题 | String |
 | image | 广告图片地址 | String |
