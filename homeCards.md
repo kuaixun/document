@@ -37,7 +37,7 @@
   4.新闻-进入app底部资讯tab“热点”界面；视频-进入app底部视频tab首界面；其他-进入app底部导航对应栏目界面
 * 实现说明  
   1.更多逻辑由客户端实现；  
-  2.跳转TAB当前定义为1新闻TAB，2视频TAB；后面扩展的新TAB标识客户端应该判断并屏蔽；
+  2.跳转TAB当前定义为1新闻TAB，2视频TAB，3导航TAB；后面扩展的新TAB标识客户端应该判断并屏蔽；
 * 字段定义
 
 | 属性 | 说明 | 类型 |
@@ -45,8 +45,10 @@
 | dataId | 主键 | long |
 | name | 显示名称 | String |
 | icon | 显示图标http地址 | String |
-| jumpType | 跳转类型,1TAB,2频道 | int |
-| jumpTarget | 跳转目标,对应TAB标识、频道ID | String | 
+| jumpType | 跳转类型,1TAB频道,2URL | int |
+| tab | 跳转TAB当前定义为1新闻TAB，2视频TAB，3导航TAB | int |
+| coid | 跳转频道ID,如为空则默认跳转TAB第一个频道 | long |
+| url | 跳转http地址 | String | 
 
 ##### 每日快讯  
 * type定义：*news*
