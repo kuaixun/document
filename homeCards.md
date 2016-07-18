@@ -13,6 +13,8 @@
 | cardSortTime | 卡片排序更新时间，更新时间变化时以服务端排序为准 | long时间戳 |
 | dhSearchUrl | 导航搜索风云榜页面地址 | string |
 | dhNovelUrl | 导航tab的小说频道列表地址 | string |
+| moreFlowUrl | 查询更多流量套餐跳转地址 | string |
+| mobBusiUrl | 掌上营业厅跳转地址 | string |
 
 #### 卡片属性
 每个卡片都拥有一系列属性，用来控制卡片的展示和实现逻辑：
