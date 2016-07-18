@@ -45,7 +45,7 @@
 | dataId | 主键 | long |
 | name | 显示名称 | String |
 | icon | 显示图标http地址 | String |
-| jumpType | 跳转类型,1TAB频道,2URL | int |
+| jumpType | 跳转类型,1APP内部TAB频道,2外部URL | int |
 | tab | 跳转TAB当前定义为1新闻TAB，2视频TAB，3导航TAB | int |
 | coid | 跳转频道ID,如为空则默认跳转TAB第一个频道 | long |
 | url | 跳转http地址 | String | 
