@@ -25,7 +25,7 @@
 | name | 卡片名称 | String |
 | type | 卡片类型，用于唯一标识某种卡片实现，具体定义见卡片类型一节 | String |
 | controls | 控制开关字段，由多个具体的控制项组成，每项占一个字节，目前从低位到高位分别表示是否可排序、是否可关闭显示，后续可扩展；举例如返回数字2，对应二级制10，则表示可关闭显示、不可排序 | int |
-| index | 排序字段 | long |
+| sort | 排序字段 | long |
 | newsList | 新闻类数据项列表，不同的卡片对应的数据项列表字段可能不一样，详细数据项属性见卡片类型一节 | Object Array |
 | dataList | 其他类数据项列表，不同的卡片对应的数据项列表字段可能不一样，详细数据项属性见卡片类型一节 | Object Array |
 
@@ -247,7 +247,7 @@
             "name": "模块导航", 
             "type": "nav", 
             "controls": 3, 
-            "index": 1, 
+            "sort": 1, 
             "dataList": [
                 {
                     "dataId": 101, 
@@ -322,7 +322,7 @@
             "name": "图片广告", 
             "type": "ad", 
             "controls": 2, 
-            "index": 2, 
+            "sort": 2, 
             "dataList": [
                 {
                     "dataId": 201, 
@@ -352,7 +352,7 @@
             "name": "推荐站点", 
             "type": "site", 
             "controls": 3, 
-            "index": 3, 
+            "sort": 3, 
             "dataList": [
                 {
                     "dataId": 301, 
@@ -451,7 +451,7 @@
             "name": "每日快讯", 
             "type": "news", 
             "controls": 3, 
-            "index": 4, 
+            "sort": 4, 
             "newsList": [
                 {
                     "id": 8157694, 
@@ -646,11 +646,17 @@
                     "open_type": 0, 
                     "rectype": 0, 
                     "ctype": 0, 
-                    "multiImgUrl": {
-                        "0": "http://go.10086.cn/surfnews/images/4061/20160720/8156342/m/8156342_id_0_7481.webp", 
-                        "1": "http://go.10086.cn/surfnews/images/4061/20160720/back/1468910442859.webp", 
-                        "2": "http://go.10086.cn/surfnews/images/4061/20160720/8156342/m/8156342_id_3_2799.webp"
-                    }, 
+                    "multiImgUrl": [
+                        {
+                            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160720/8156342/m/8156342_id_0_7481.png"
+                        }, 
+                        {
+                            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160720/back/1468910442859.png"
+                        }, 
+                        {
+                            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160720/8156342/m/8156342_id_3_2799.png"
+                        }
+                    ], 
                     "is_energy": 1, 
                     "positive_energy": 0, 
                     "negative_energy": -4479, 
@@ -913,11 +919,17 @@
                     "iconPath": "http://go.10086.cn/surfnews/usr/surf/icon/20151209174953.png", 
                     "rectype": 0, 
                     "ctype": 0, 
-                    "multiImgUrl": {
-                        "0": "http://go.10086.cn/surfnews/images/4061/20160719/back/1468892871468.jpg", 
-                        "1": "http://go.10086.cn/surfnews/images/4061/20160719/back/1468892871470.jpg", 
-                        "2": "http://go.10086.cn/surfnews/images/4061/20160719/back/1468892871472.jpg"
-                    }, 
+                    "multiImgUrl": [
+                        {
+                            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160720/8156342/m/8156342_id_0_7481.png"
+                        }, 
+                        {
+                            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160720/back/1468910442859.png"
+                        }, 
+                        {
+                            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160720/8156342/m/8156342_id_3_2799.png"
+                        }
+                    ], 
                     "is_energy": 0, 
                     "isComment": 0, 
                     "comment_count": 0, 
@@ -968,7 +980,7 @@
             "name": "搞笑视频", 
             "type": "funny", 
             "controls": 3, 
-            "index": 5, 
+            "sort": 5, 
             "newsList": [
                 {
                     "id": 8156942, 
@@ -1459,7 +1471,7 @@
             "name": "轻松一刻", 
             "type": "joke", 
             "controls": 3, 
-            "index": 6, 
+            "sort": 6, 
             "newsList": [
                 {
                     "channelId": 4648023, 
@@ -1858,7 +1870,7 @@
             "name": "美女", 
             "type": "beauty", 
             "controls": 3, 
-            "index": 7, 
+            "sort": 7, 
             "newsList": [
                 {
                     "channelId": 1024229, 
@@ -2203,14 +2215,14 @@
             "name": "最常访问", 
             "type": "latest", 
             "controls": 3, 
-            "index": 8
+            "sort": 8
         }, 
         {
             "cardId": 9, 
             "name": "实时热点", 
             "type": "hot", 
             "controls": 3, 
-            "index": 9, 
+            "sort": 9, 
             "dataList": [
                 {
                     "dataId": 901, 
@@ -2283,7 +2295,7 @@
             "name": "小说", 
             "type": "novel", 
             "controls": 3, 
-            "index": 10, 
+            "sort": 10, 
             "dataList": [
                 {
                     "dataId": 1001, 
@@ -2362,7 +2374,7 @@
             "name": "话费流量查询", 
             "type": "flow", 
             "controls": 3, 
-            "index": 11
+            "sort": 11
         }
     ]
 }
