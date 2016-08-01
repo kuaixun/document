@@ -4,10 +4,9 @@
 
 待添加站点列表接口*toAddSites*提供了导航版APP可添加的站点数据列表。
 
-
 #### **请求说明**
 
-* 请求方法 *findInfoNByCoid5*
+* 请求方法 *toAddSites*
 
 * 请求参数
 
