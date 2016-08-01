@@ -21,129 +21,103 @@
 | img | 网站图标地址，当前版本不提供 | String | 2 | item |
 | url | 网页地址 | String | 2 | item
 
-* 一般频道响应示例
+* 响应示例
 ```
 {
     "res": {
         "reCode": "1", 
         "resMessage": "Operation is successful"
     }, 
-    "picNews": [
+    "item": [
         {
-            "title": "壮观！数万只鹦鹉聚集饮水遮天蔽日", 
-            "time": 1455775831928, 
-            "source": "新华网", 
-            "content_url": "http://go.10086.cn/surfnews/images/4061/20160218/5369992/5369992.html", 
-            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160218/back/1454034002240.jpg", 
-            "newsUrl": "http://news.xinhuanet.com/photo/2016-02/18/c_128730012.htm", 
-            "isTop": 0, 
-            "type": 2, 
-            "bannerUrl": "http://go.10086.cn/surfnews/images/4061/20160218/back/1454034002240.jpg", 
-            "open_type": 0, 
-            "ctype": 0, 
-            "is_energy": 1, 
-            "positive_energy": 18412, 
-            "negative_energy": 0, 
-            "isComment": 0, 
-            "comment_count": 0, 
-            "updateTime": 1455775478000, 
-            "rssId": 59322631, 
-            "rssName": "网事联播", 
-            "rssIcon": "http://go.10086.cn/hotpic/201506/01/source59322631.jpg", 
-            "rssSource": "1", 
-            "showType": 1003, 
-            "newsId": 5369992, 
-            "channelId": 4061, 
-            "webView": 0, 
-            "bigImg": "1", 
-            "content_type": 1
-        }
-    ], 
-    "news": [
+            "dataId": 1, 
+            "name": "糗事百科", 
+            "category": "笑话", 
+            "url": "http://go.10086.cn"
+        }, 
         {
-            "title": "微信提现收费动了谁的奶酪？", 
-            "time": 1455762554000, 
-            "source": "快讯", 
-            "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160218/back/1454034002186.jpg", 
-            "dm":"600*800",
-            "newsUrl": "http://go.10086.cn/surfnews/usr/surf/special/20160218/1323.html", 
-            "isTop": 1, 
-            "type": 1, 
-            "open_type": 1, 
-            "iconPath": "http://go.10086.cn/surfnews/usr/surf/icon/20151209174953.png", 
-            "ctype": 0, 
-            "multiImgUrl": [
-                {
-                    "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160218/back/1454034002186.jpg"
-                }, 
-                {
-                    "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160218/back/1454034002188.jpg"
-                }, 
-                {
-                    "imgUrl": "http://go.10086.cn/surfnews/images/4061/20160218/back/1454034002189.jpg"
-                }
-            ], 
-            "is_energy": 0, 
-            "isComment": 0, 
-            "comment_count": 0, 
-            "updateTime": 1455776734000, 
-            "showType": 1002, 
-            "newsId": 5363474, 
-            "channelId": 4061, 
-            "webView": 1, 
-            "content_type": 1,
-            "rssId": 59322631, 
-            "rssName": "网事联播", 
-            "rssIcon": "http://go.10086.cn/hotpic/201506/01/source59322631.jpg", 
-            "rssSource": "1"
-        }
-    ]
-}
-```
-
-* 段子频道响应示例
-
-```
-{
-    "res": {
-        "reCode": "1", 
-        "resMessage": "Operation is successful"
-    }, 
-    "picNews": [ ], 
-    "news": [
+            "dataId": 2, 
+            "name": "快乐麻花", 
+            "category": "笑话", 
+            "url": "https://m.baidu.com"
+        }, 
         {
-            "title": "老婆：老公我去隆胸吧？老公：好啊...", 
-            "desc": "老婆：老公我去隆胸吧？
-                老公：好啊。
-                老婆：哼！你果然嫌我胸小。
-                老公：......
-                老婆：老公我去隆胸吧？
-                老公：别去了。
-                老婆：哼！你就是舍不得我花钱。
-                老公：......", 
-            "time": 1455678900000, 
-            "source": "手机冲浪", 
-            "content_url": "http://go.10086.cn/surfnews/images/4648023/20160217/5341892/5341892.html", 
-            "isTop": 0, 
-            "type": 1, 
-            "open_type": 0, 
-            "ctype": 0, 
-            "isComment": 1, 
-            "showType": 1003, 
-            "newsId": 5341892, 
-            "channelId": 4648023, 
-            "webView": 0, 
-            "upCount": 1286, 
-            "downCount": 207, 
-            "shareCount": 120, 
-            "content": "老婆：老公我去隆胸吧？
-                老公：好啊。
-                老婆：哼！你果然嫌我胸小。
-                老公：......
-                老婆：老公我去隆胸吧？
-                老公：别去了。
-                老婆：哼！你就是舍不得我花钱。
-                老公：......"
+            "dataId": 3, 
+            "name": "捧腹", 
+            "category": "笑话", 
+            "url": "http://www.qq.com"
+        }, 
+        {
+            "dataId": 4, 
+            "name": "暴走漫画", 
+            "category": "笑话", 
+            "url": "http://www.people.com.cn"
+        }, 
+        {
+            "dataId": 5, 
+            "name": "儒豹段子", 
+            "category": "笑话", 
+            "url": "http://www.youku.com"
+        }, 
+        {
+            "dataId": 6, 
+            "name": "笑话之王", 
+            "category": "笑话", 
+            "url": "https://www.taobao.com"
+        }, 
+        {
+            "dataId": 7, 
+            "name": "内涵段子", 
+            "category": "笑话", 
+            "url": "http://www.jd.com"
+        }, 
+        {
+            "dataId": 8, 
+            "name": "凤凰军事", 
+            "category": "军事", 
+            "url": "http://www.ifeng.com"
+        }, 
+        {
+            "dataId": 9, 
+            "name": "抗美援朝", 
+            "category": "军事", 
+            "url": "http://go.10086.cn"
+        }, 
+        {
+            "dataId": 10, 
+            "name": "附近的人", 
+            "category": "交友", 
+            "url": "https://m.baidu.com"
+        }, 
+        {
+            "dataId": 11, 
+            "name": "陌陌", 
+            "category": "交友", 
+            "url": "http://www.qq.com"
+        }, 
+        {
+            "dataId": 12, 
+            "name": "土豆", 
+            "category": "视频", 
+            "url": "http://www.people.com.cn"
+        }, 
+        {
+            "dataId": 13, 
+            "name": "优酷", 
+            "category": "视频", 
+            "url": "http://www.youku.com"
+        }, 
+        {
+            "dataId": 14, 
+            "name": "起点", 
+            "category": "小说", 
+            "url": "https://www.taobao.com"
+        }, 
+        {
+            "dataId": 15, 
+            "name": "红袖添香", 
+            "category": "小说", 
+            "url": "http://www.jd.com"
         }
     ]
 }
