@@ -14,37 +14,12 @@
 
 | 字段 | 说明 | 类型 | 级别 | 父节点
 | -- | -- | -- |
-| news | 新闻列表 | 对象数组 |1||
-| newsId | 新闻ID | long | 2 | news | 
-| channelId | 频道ID | long | 2 | news
-| type | 新闻类型 | int | 2 | news
-|open_type |打开方式|int	|2	|news
-|title	|标题 |string	|2	|news
-|desc	|描述 |string 	|2	|news
-|imgUrl |图片 |string |2 |news
-|dm |图片分辨率，宽*高格式 |string |2 |news
-|showType |展示格式，[参照格式定义](#新闻展示格式定义) |int |2 |news
-|bigImg |是否为大图新闻，1是0否 |string |2 |news
-|bannerUrl |banner图或者大图地址 |string | 2 |news
-|isTop	|是否置顶	|int |2	|news
-|time	|发布时间	|long |2	|news
-|content	|正文内容，只针对段子频道返回	|string |2	|news
-|upCount	|顶数量 |long	|2	|news
-|downCount	|踩数量 |long	|2	|news
-|shareCount	|分享数量 |long	|2	|news
-|isComment |是否支持评论，1是0否 |int |2 |news
-|comment_count |评论数量 |long |2 |news
-|hot_comment_list	|热门评论 |对象数组	|2	|news
-|commentId	|评论ID |long	|3	|hot_comment_list
-|newsid	|新闻ID |long	|3	|hot_comment_list
-|content	|评论内容 |string	|3	|hot_comment_list
-|uid	|用户ID |string	|3	|hot_comment_list
-|did	|用户设备号 |string	|3	|hot_comment_list
-|headPic	|用户头像 |string	|3	|hot_comment_list
-|nickname	|用户昵称 |string	|3	|hot_comment_list
-|hot	|是否热门评论，1是0否 |int	|3	|hot_comment_list
-|createtime	|评论时间 |long	|3	|hot_comment_list
-|location	|位置 |string	|3	|hot_comment_list
+| item | 新闻列表 | 对象数组 |1 |  |
+| dataId | 主键 | long | 2 | item |
+| name | 网站名称 | String | 2 | item |
+| category | 网站分类 | String | 2 | item |
+| img | 网站图标地址，当前版本不提供 | String | 2 | item |
+| url | 网页地址 | String | 2 | item
 
 * 一般频道响应示例
 ```
