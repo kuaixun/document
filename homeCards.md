@@ -15,6 +15,7 @@
 | dhNovelUrl | 导航tab的小说频道列表地址 | string |
 | moreFlowUrl | 查询更多流量套餐跳转地址 | string |
 | mobBusiUrl | 掌上营业厅跳转地址 | string |
+| controls | 控制开关字段，由多个具体的控制项组成，每项占一个字节，目前从低位到高位分别表示是否显示添加网站按钮，后续可扩展； | int |
 
 #### 卡片属性
 每个卡片都拥有一系列属性，用来控制卡片的展示和实现逻辑：
@@ -23,6 +24,7 @@
 | -- | -- | -- |
 | cardId | 主键 | long |
 | name | 卡片名称 | String |
+| desc | 卡片描述 | String |
 | type | 卡片类型，用于唯一标识某种卡片实现，具体定义见卡片类型一节 | String |
 | controls | 控制开关字段，由多个具体的控制项组成，每项占一个字节，目前从低位到高位分别表示是否可排序、是否可关闭显示，后续可扩展；举例如返回数字2，对应二级制10，则表示可关闭显示、不可排序 | int |
 | sort | 排序字段 | long |
@@ -239,12 +241,14 @@
         "dhSearchUrl": "http://go.10086.cn/hao/dwz/0000rT", 
         "dhNovelUrl": "http://go.10086.cn/hao/dwz/0000rR", 
         "moreFlowUrl": "https://m.baidu.com/", 
-        "mobBusiUrl": "https://m.baidu.com/"
+        "mobBusiUrl": "https://m.baidu.com/",
+        "controls": 1
     }, 
     "cardList": [
         {
             "cardId": 1, 
             "name": "模块导航", 
+            "desc": "冲浪快讯，从这里开始", 
             "type": "nav", 
             "controls": 3, 
             "sort": 1, 
@@ -320,6 +324,7 @@
         {
             "cardId": 2, 
             "name": "图片广告", 
+            "desc": "广告，让生活更精彩", 
             "type": "ad", 
             "controls": 2, 
             "sort": 2, 
@@ -350,6 +355,7 @@
         {
             "cardId": 3, 
             "name": "推荐站点", 
+            "desc": "最热门的站点推荐", 
             "type": "site", 
             "controls": 3, 
             "sort": 3, 
@@ -449,6 +455,7 @@
         {
             "cardId": 4, 
             "name": "每日快讯", 
+            "desc": "实时呈现个性化热点推荐", 
             "type": "news", 
             "controls": 3, 
             "sort": 4, 
@@ -978,6 +985,7 @@
         {
             "cardId": 5, 
             "name": "搞笑视频", 
+            "desc": "最新热门爆笑视频", 
             "type": "funny", 
             "controls": 3, 
             "sort": 5, 
@@ -1469,6 +1477,7 @@
         {
             "cardId": 6, 
             "name": "轻松一刻", 
+            "desc": "不开心不要钱", 
             "type": "joke", 
             "controls": 3, 
             "sort": 6, 
@@ -1868,6 +1877,7 @@
         {
             "cardId": 7, 
             "name": "美女", 
+            "desc": "热辣、清纯、御姐...", 
             "type": "beauty", 
             "controls": 3, 
             "sort": 7, 
@@ -2213,6 +2223,7 @@
         {
             "cardId": 8, 
             "name": "最常访问", 
+            "desc": "智能推荐最常访问的地址", 
             "type": "latest", 
             "controls": 3, 
             "sort": 8
@@ -2220,6 +2231,7 @@
         {
             "cardId": 9, 
             "name": "实时热点", 
+            "desc": "热门搜索风云榜", 
             "type": "hot", 
             "controls": 3, 
             "sort": 9, 
@@ -2287,12 +2299,21 @@
                 {
                     "dataId": 916, 
                     "name": "暴雨最牛公交掉头"
+                }, 
+                {
+                    "dataId": 917, 
+                    "name": "土耳其首都大火"
+                }, 
+                {
+                    "dataId": 918, 
+                    "name": "重庆遭暴雨袭击"
                 }
             ]
         }, 
         {
             "cardId": 10, 
             "name": "小说", 
+            "desc": "养成读书的好习惯", 
             "type": "novel", 
             "controls": 3, 
             "sort": 10, 
@@ -2372,6 +2393,7 @@
         {
             "cardId": 11, 
             "name": "话费流量查询", 
+            "desc": "及时查询手机话费流量余额", 
             "type": "flow", 
             "controls": 3, 
             "sort": 11
