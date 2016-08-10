@@ -180,7 +180,7 @@
 | -- | -- | -- |
 | dataId | 主键 | long |
 | name | 小说主题 | String |
-| showType | 展示类型，1图片小说，2文字小说 | String |
+| showType | 展示类型，1图片小说，2文字小说 | int |
 | img | 小说封面地址 | String |
 | url | 小说跳转地址 | String |
 | readCount | 阅读数量 | long |
