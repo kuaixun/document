@@ -11,8 +11,6 @@
 | 属性 | 说明 | 类型 |
 | -- | -- | -- |
 | cardSortTime | 卡片排序更新时间，更新时间变化时以服务端排序为准 | long时间戳 |
-| dhSearchUrl | 导航搜索风云榜页面地址 | string |
-| dhNovelUrl | 小说卡片更多链接地址 | string |
 | moreFlowUrl | 查询更多流量套餐跳转地址 | string |
 | mobBusiUrl | 掌上营业厅跳转地址 | string |
 | controls | 控制开关字段，由多个具体的控制项组成，每项占一个字节，目前从低位到高位分别表示是否显示添加网站按钮，后续可扩展； | int |
