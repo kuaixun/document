@@ -1,78 +1,80 @@
 # 新版本新闻列表
 
-#### **实现说明**  
+#### **实现说明**
 
-新版本新闻列表接口*findInfoNByCoid5*是为android客户端5.0之后的版本实现的接口，和[*findInfoNByCoidN*](findInfoNByCoidN.html)相比主要修改是规范了一些字段的命名，并且增加了一些满足新需求的字段。
+新版本新闻列表接口_findInfoNByCoid5_是为android客户端5.0之后的版本实现的接口，和[_findInfoNByCoidN_](findInfoNByCoidN.html)相比主要修改是规范了一些字段的命名，并且增加了一些满足新需求的字段。
 
 #### **新闻展示格式定义**
+
 showType字段用来决定列表的展示格式，定义如下：
 
-|取值 |说明 | 
-| --  | -- | 
-|1001 |单图
-|1002 |多图
-|1003 |无图，大图新闻为了兼容老版本也是置为1003，新版本需根据bigImg是否为1判断大图，大图图片地址取bannerUrl字段
-|1004 |趣图新闻，第一张图片是gif
-|1005 |趣图新闻，第一张图片不是gif
-|2001 |广告大图
-|2002 |广告小图
-|2003 |广告下载小图
-|2004 |广告下载大图
-|3001 |专题有图片
-|3002 |专题无图片
-|4001 |热推第一条的T+新闻推荐
-|4002 |热推第一条的T+RSS推荐
+| 取值 | 说明 |
+| --- | --- |
+| 1001 | 单图 |
+| 1002 | 多图 |
+| 1003 | 无图，大图新闻为了兼容老版本也是置为1003，新版本需根据bigImg是否为1判断大图，大图图片地址取bannerUrl字段 |
+| 1004 | 趣图新闻，第一张图片是gif |
+| 1005 | 趣图新闻，第一张图片不是gif |
+| 2001 | 广告大图 |
+| 2002 | 广告小图 |
+| 2003 | 广告下载小图 |
+| 2004 | 广告下载大图 |
+| 3001 | 专题有图片 |
+| 3002 | 专题无图片 |
+| 4001 | 热推第一条的T+新闻推荐 |
+| 4002 | 热推第一条的T+RSS推荐 |
 
 #### **请求说明**
 
-* 请求方法 *findInfoNByCoid5*
+* 请求方法 _findInfoNByCoid5_
 
 * 请求参数
 
 | 字段 | 说明 | 类型 | 必须 |
-| -- | -- | -- | -- | -- | -- |
+| :--- | :--- | :--- | :--- |
 | coid | 频道ID | long | 是 |
 | page | 请求页数，从1开始 | int | 是 |
 
 * 返回参数
 
-| 字段 | 说明 | 类型 | 级别 | 父节点
-| -- | -- | -- |
-| news | 新闻列表 | 对象数组 |1||
-| newsId | 新闻ID | long | 2 | news | 
-| channelId | 频道ID | long | 2 | news
-| type | 新闻类型 | int | 2 | news
-|open_type |打开方式|int	|2	|news
-|title	|标题 |string	|2	|news
-|desc	|描述 |string 	|2	|news
-|imgUrl |图片 |string |2 |news
-|dm |图片分辨率，宽*高格式 |string |2 |news
-|showType |展示格式，[参照格式定义](#新闻展示格式定义) |int |2 |news
-|bigImg |是否为大图新闻，1是0否 |string |2 |news
-|bannerUrl |banner图或者大图地址 |string | 2 |news
-|isTop	|是否置顶	|int |2	|news
-|time	|发布时间	|long |2	|news
-|content	|正文内容，只针对段子频道返回	|string |2	|news
-|upCount	|顶数量 |long	|2	|news
-|downCount	|踩数量 |long	|2	|news
-|shareCount	|分享数量 |long	|2	|news
-|isComment |是否支持评论，1是0否 |int |2 |news
-|comment_count |评论数量 |long |2 |news
-|hot_comment_list	|热门评论 |对象数组	|2	|news
-|commentId	|评论ID |long	|3	|hot_comment_list
-|newsid	|新闻ID |long	|3	|hot_comment_list
-|content	|评论内容 |string	|3	|hot_comment_list
-|uid	|用户ID |string	|3	|hot_comment_list
-|did	|用户设备号 |string	|3	|hot_comment_list
-|headPic	|用户头像 |string	|3	|hot_comment_list
-|nickname	|用户昵称 |string	|3	|hot_comment_list
-|hot	|是否热门评论，1是0否 |int	|3	|hot_comment_list
-|createtime	|评论时间 |long	|3	|hot_comment_list
-|location	|位置 |string	|3	|hot_comment_list
+| 字段 | 说明 | 类型 | 级别 | 父节点 |
+| :--- | :--- | :--- | :--- | :--- |
+| news | 新闻列表 | 对象数组 | 1 |  |
+| newsId | 新闻ID | long | 2 | news |
+| channelId | 频道ID | long | 2 | news |
+| type | 新闻类型，1普通新闻，2banner新闻，3活动，4图集，5普通专题新闻，6banner专题新闻 | int | 2 | news |
+| open\_type | 打开方式 | int | 2 | news |
+| title | 标题 | string | 2 | news |
+| desc | 描述 | string | 2 | news |
+| imgUrl | 图片 | string | 2 | news |
+| dm | 图片分辨率，宽\*高格式 | string | 2 | news |
+| showType | 展示格式，[参照格式定义](#新闻展示格式定义) | int | 2 | news |
+| bigImg | 是否为大图新闻，1是0否 | string | 2 | news |
+| bannerUrl | banner图或者大图地址 | string | 2 | news |
+| isTop | 是否置顶 | int | 2 | news |
+| time | 发布时间 | long | 2 | news |
+| content | 正文内容，只针对段子频道返回 | string | 2 | news |
+| upCount | 顶数量 | long | 2 | news |
+| downCount | 踩数量 | long | 2 | news |
+| shareCount | 分享数量 | long | 2 | news |
+| isComment | 是否支持评论，1是0否 | int | 2 | news |
+| comment\_count | 评论数量 | long | 2 | news |
+| hot\_comment\_list | 热门评论 | 对象数组 | 2 | news |
+| commentId | 评论ID | long | 3 | hot\_comment\_list |
+| newsid | 新闻ID | long | 3 | hot\_comment\_list |
+| content | 评论内容 | string | 3 | hot\_comment\_list |
+| uid | 用户ID | string | 3 | hot\_comment\_list |
+| did | 用户设备号 | string | 3 | hot\_comment\_list |
+| headPic | 用户头像 | string | 3 | hot\_comment\_list |
+| nickname | 用户昵称 | string | 3 | hot\_comment\_list |
+| hot | 是否热门评论，1是0否 | int | 3 | hot\_comment\_list |
+| createtime | 评论时间 | long | 3 | hot\_comment\_list |
+| location | 位置 | string | 3 | hot\_comment\_list |
 
 * 一般频道响应示例
-```
-{
+
+  ```
+  {
     "res": {
         "reCode": "1", 
         "resMessage": "Operation is successful"
@@ -147,8 +149,8 @@ showType字段用来决定列表的展示格式，定义如下：
             "rssSource": "1"
         }
     ]
-}
-```
+  }
+  ```
 
 * 段子频道响应示例
 
@@ -197,4 +199,6 @@ showType字段用来决定列表的展示格式，定义如下：
     ]
 }
 ```
+
+
 
